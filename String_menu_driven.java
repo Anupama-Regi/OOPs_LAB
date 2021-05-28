@@ -42,7 +42,7 @@ class String1
 		for(String k:c1)
 		{
 			f=0;
-			for(int i=0;i<c;i++)
+			for(int i=0;i<=c;i++)
 			{
 				if(k.equalsIgnoreCase(c2[i]))
 					f++;
@@ -52,7 +52,7 @@ class String1
 					c2[++c]=k;
 				}
 		}
-		for(int k=0;k<c;k++)
+		for(int k=0;k<=c;k++)
 		{
 			int n=0;
 			for(String i:c1)
