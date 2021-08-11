@@ -1,7 +1,7 @@
 package arithmetic_package;
-public class Subtract implements operations
+public class Subtract
 {
-	public int arithoperator(int a,int b)
+	public int arith_sub_operator(int a,int b)
 	{
 		System.out.println("\n\nSubtraction of 2 number : ");
 		return(a-b);
