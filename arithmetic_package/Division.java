@@ -1,7 +1,7 @@
 package arithmetic_package;
-public class Division implements operations
+public class Division
 {
-	public int arithoperator(int a,int b)
+	public int arith_div_operator(int a,int b)
 	{
 		System.out.println("\n\nDivision of 2 number : ");
 		return(a/b);
