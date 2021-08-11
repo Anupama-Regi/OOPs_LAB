@@ -1,9 +1,5 @@
 package arithmetic_package;
-public class Multiplication implements operations
+public interface Multiplication
 {
-	public int arithoperator(int a,int b)
-	{
-		System.out.println("\n\nMultiplication of 2 number : ");
-		return(a*b);
-	}
+	public void arith_multi_operator(int a,int b);
 }
