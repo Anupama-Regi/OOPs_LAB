@@ -1,9 +1,5 @@
 package arithmetic_package;
-public class Sum implements operations
+public interface Sum
 {
-	public int arithoperator(int a,int b)
-	{
-		System.out.println("\n\nSum of 2 number : ");
-		return(a+b);
-	}
+	public void arith_sum_operator(int a,int b);
 }
