@@ -1,7 +1,17 @@
 import graphics_package.*;
 import java.util.*;
-public class Find_area
+public class Find_area implements graphics_package.Square_area,graphics_package.Triangle_area
 {
+	public void square(float a)
+	{
+		System.out.println("\n\nArea of Square : ");
+		System.out.println(a*a);
+	}
+	public void triangle(float b,float h)
+	{
+		System.out.println("\n\nArea of Triangle : ");
+		System.out.println((b*h)/2);
+	}
 	public static void main(String args[])
 	{
 
@@ -10,8 +20,8 @@ public class Find_area
 		System.out.println("\n\t\t-------------------------------------");
 		System.out.println("\n\nEnter the side of square : ");
 		float n=sc.nextFloat();
-		Square_area sa=new Square_area();
-		System.out.println(sa.square(n));
+		Find_area sa=new Find_area();
+		sa.square(n);
 
 		System.out.println("\n\t\t-------------------------------------");
 		System.out.println("\n\nEnter the length of rectangle : ");
@@ -26,8 +36,8 @@ public class Find_area
 		float br=sc.nextFloat();
 		System.out.println("Enter the heigth of triangle : ");
 		float h=sc.nextFloat();
-		Triangle_area ta=new Triangle_area();
-		System.out.println(ta.triangle(br,h));
+		Find_area ta=new Find_area();
+		ta.triangle(br,h);
 
 		System.out.println("\n\t\t-------------------------------------");
 		System.out.println("\n\nEnter the radius of circle : ");
